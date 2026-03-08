@@ -62,9 +62,23 @@ export default function CreatePage() {
         }),
       });
 
-      const result = await response.json();
+      const raw = await response.text();
+      let result = {};
+
+      if (raw) {
+        try {
+          result = JSON.parse(raw);
+        } catch {
+          throw new Error("The server returned an invalid response.");
+        }
+      }
+
       if (!response.ok) {
         throw new Error(result.error || "Could not create bloom");
+      }
+
+      if (!result.id) {
+        throw new Error("The bloom link could not be created.");
       }
 
       setShareLink(`${window.location.origin}/b/${result.id}`);
@@ -91,7 +105,7 @@ export default function CreatePage() {
     : "Happy womens day!";
 
   const shareText = `${shareGreeting}
-I made something for you. Open it. 🌸
+I made something for you. Open it. \u{1F338}
 
 ${shareLink}`.trim();
 
@@ -258,3 +272,4 @@ ${shareLink}`.trim();
     </main>
   );
 }
+
