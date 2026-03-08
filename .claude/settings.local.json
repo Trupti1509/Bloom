@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run build)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:3000)",
+      "Bash(node -e \"const fs=require\\(''fs''\\); const data=JSON.parse\\(fs.readFileSync\\(''C:\\\\Users\\\\trupt\\\\.claude\\\\projects\\\\C--Users-trupt-Downloads-Secret-Bloom\\\\990e0f17-958d-4f89-8e0f-aa057a1568df\\\\tool-results\\\\toolu_01BXqULz3MHDmgpJDamhXcD7.json'',''utf8''\\)\\); console.log\\(data[0].text.substring\\(0, 8000\\)\\)\")",
+      "Bash(node -e \"const fs=require\\(''fs''\\); const p=''C:\\\\Users\\\\trupt\\\\.claude\\\\projects\\\\C--Users-trupt-Downloads-Secret-Bloom\\\\990e0f17-958d-4f89-8e0f-aa057a1568df\\\\tool-results\\\\toolu_01BXqULz3MHDmgpJDamhXcD7.json''; const data=JSON.parse\\(fs.readFileSync\\(p,''utf8''\\)\\); console.log\\(data[0].text.substring\\(0, 10000\\)\\)\")",
+      "Bash(node -e \"const fs=require\\(''fs''\\); const p=''C:/Users/trupt/.claude/projects/C--Users-trupt-Downloads-Secret-Bloom/990e0f17-958d-4f89-8e0f-aa057a1568df/tool-results/toolu_01BXqULz3MHDmgpJDamhXcD7.json''; const data=JSON.parse\\(fs.readFileSync\\(p,''utf8''\\)\\); const t=data[0].text; console.log\\(''LEN:''+t.length\\); console.log\\(t.substring\\(0,12000\\)\\)\")",
+      "Bash(node -e \"const fs=require\\(''fs''\\); const p=''C:/Users/trupt/.claude/projects/C--Users-trupt-Downloads-Secret-Bloom/990e0f17-958d-4f89-8e0f-aa057a1568df/tool-results/toolu_01BXqULz3MHDmgpJDamhXcD7.json''; const data=JSON.parse\\(fs.readFileSync\\(p,''utf8''\\)\\); const t=data[0].text; console.log\\(t.substring\\(12000,24000\\)\\)\")",
+      "Bash(node -e \"const fs=require\\(''fs''\\); const p=''C:/Users/trupt/.claude/projects/C--Users-trupt-Downloads-Secret-Bloom/990e0f17-958d-4f89-8e0f-aa057a1568df/tool-results/toolu_01BXqULz3MHDmgpJDamhXcD7.json''; const data=JSON.parse\\(fs.readFileSync\\(p,''utf8''\\)\\); const t=data[0].text; console.log\\(t.substring\\(24000,36000\\)\\)\")",
+      "Bash(node -e \"const fs=require\\(''fs''\\); const p=''C:/Users/trupt/.claude/projects/C--Users-trupt-Downloads-Secret-Bloom/990e0f17-958d-4f89-8e0f-aa057a1568df/tool-results/toolu_01BXqULz3MHDmgpJDamhXcD7.json''; const data=JSON.parse\\(fs.readFileSync\\(p,''utf8''\\)\\); const t=data[0].text; console.log\\(t.substring\\(36000\\)\\)\")"
+    ]
+  }
+}
