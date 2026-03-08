@@ -1882,6 +1882,13 @@ textarea {
   box-shadow: 0 14px 30px rgba(30, 18, 24, 0.22);
 }
 
+@media (max-width: 640px) {
+  .postcardPaper {
+    padding: 16px 14px 18px;
+    border-radius: 12px;
+  }
+}
+
 .postHeroArt {
   position: relative;
   margin: 0 auto 16px;
@@ -1935,6 +1942,12 @@ textarea {
   color: #5f3143;
 }
 
+@media (max-width: 640px) {
+  .postGreeting {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+  }
+}
+
 .postMessage {
   margin-top: 14px;
   margin-inline: auto;
@@ -1958,6 +1971,15 @@ textarea {
       rgba(175, 129, 144, 0.18) 30px 31px
     );
   transform: rotate(-0.8deg);
+}
+
+@media (max-width: 640px) {
+  .postMessage {
+    min-height: 120px;
+    font-size: clamp(1.4rem, 3.5vw, 1.7rem);
+    padding: 6px 8px 4px;
+    margin-top: 10px;
+  }
 }
 
 .postMessage-short {
@@ -2159,6 +2181,28 @@ textarea {
 
   .girlFigure {
     width: min(240px, 74vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .themeGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  
+  .itemGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  
+  .themeCard {
+    min-height: 100px;
+    padding: 8px;
+    gap: 4px;
+  }
+  
+  .itemCard {
+    padding: 6px 4px;
   }
 }
 
@@ -2633,6 +2677,21 @@ textarea {
   grid-template-columns: 1.05fr 0.95fr;
   gap: clamp(24px, 4vw, 56px);
   align-items: center;
+  padding: 0 16px;
+}
+
+@media (max-width: 900px) {
+  .landingHero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .landingHero {
+    gap: 24px;
+  }
 }
 
 .landingOverline {
@@ -2649,6 +2708,12 @@ textarea {
   text-wrap: balance;
 }
 
+@media (max-width: 640px) {
+  .landingCopy h1 {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+  }
+}
+
 .landingCopy p {
   margin-top: 16px;
   max-width: 640px;
@@ -2661,6 +2726,18 @@ textarea {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .landingActions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .landingPrimaryBtn,
+  .landingSecondaryBtn {
+    width: 100%;
+  }
 }
 
 .landingPrimaryBtn,
@@ -2699,6 +2776,12 @@ textarea {
   overflow: visible;
 }
 
+@media (max-width: 640px) {
+  .landingVisual {
+    height: min(320px, 50vh);
+  }
+}
+
 .landingVisualGlow {
   position: absolute;
   left: 50%;
@@ -2709,6 +2792,14 @@ textarea {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255, 146, 191, 0.34), transparent 74%);
   filter: blur(24px);
+}
+
+@media (max-width: 640px) {
+  .landingVisualGlow {
+    width: 280px;
+    height: 200px;
+    filter: blur(18px);
+  }
 }
 
 .landingBouquetHero {
@@ -2732,6 +2823,20 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .landingHighlights {
+    grid-template-columns: 1fr;
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .landingHighlights {
+    margin: 32px auto 0;
+    gap: 10px;
+  }
 }
 
 .landingHighlightCard {
@@ -2847,6 +2952,25 @@ textarea {
   gap: 10px;
 }
 
+@media (max-width: 760px) {
+  .revealXShell {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    position: fixed;
+    inset: 0;
+    max-height: 100vh;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .revealXShell {
+    border-radius: 12px;
+    padding: 6px;
+  }
+}
+
 .revealXTopbar {
   display: flex;
   justify-content: space-between;
@@ -2881,6 +3005,13 @@ textarea {
   display: grid;
   grid-template-columns: 1.12fr 0.88fr;
   gap: 12px;
+}
+
+@media (max-width: 760px) {
+  .revealXGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
 }
 
 .revealXBloomPanel,

@@ -237,7 +237,11 @@ export default function BouquetCluster({ items, variant = "card", className = ""
   return (
     <div
       className={`bouquetCluster bouquetCluster-${variant} ${className}`.trim()}
-      style={{ width: layout.width, height: layout.height }}
+      style={{
+        width: "100%",
+        maxWidth: `${layout.width}px`,
+        aspectRatio: `${layout.width} / ${layout.height}`,
+      }}
       aria-hidden="true"
     >
       <svg viewBox="0 0 360 420" className="bouquetSvg" role="img" aria-label="bouquet illustration">
